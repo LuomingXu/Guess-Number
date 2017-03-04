@@ -13,7 +13,7 @@ int main(void)
 	}
 	printf("\n");
 
-	printf("请输入你所认为的数");
+	printf("请输入你所认为的数\n");
 	scanf_s("%d", &yournumber);
 
 	while (number!=yournumber)
