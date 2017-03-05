@@ -31,4 +31,6 @@ int main(void)
 		}
 	}
 	printf("¹§Ï²Äã²Â¶ÔÁË\n");
+
+	return 0;
 }
