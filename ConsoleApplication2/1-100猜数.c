@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
-int main(void)
+int main(int argc, char const *argv[])
 {
-	int number, yournumber = 0;
-	int i = 0;
+	int number = 0, yournumber = 0, i = 0;
+
+	//定义时间种子，不能定义在for循环之中，若如此，就为伪随机
 	srand((unsigned)time(NULL));
-	for (i; i < 100; i++)
+	for (i; i < 100; i++)//查看随机的的数是否为随机数
 	{
 		number = rand() % 101;
 		printf("%d\t", number);
