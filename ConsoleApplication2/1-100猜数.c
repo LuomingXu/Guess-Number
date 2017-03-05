@@ -1,37 +1,37 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
 int main(int argc, char const *argv[])
 {
 	int number = 0, yournumber = 0, i = 0;
 
-	//¶¨ÒåÊ±¼äÖÖ×Ó£¬²»ÄÜ¶¨ÒåÔÚforÑ­»·Ö®ÖĞ£¬ÈôÈç´Ë£¬¾ÍÎªÎ±Ëæ»ú
+	//å®šä¹‰æ—¶é—´ç§å­ï¼Œä¸èƒ½å®šä¹‰åœ¨forå¾ªç¯ä¹‹ä¸­ï¼Œè‹¥å¦‚æ­¤ï¼Œå°±ä¸ºä¼ªéšæœº
 	srand((unsigned)time(NULL));
-	for (i; i < 100; i++)//²é¿´Ëæ»úµÄµÄÊıÊÇ·ñÎªËæ»úÊı
+	for (i; i < 100; i++)//æŸ¥çœ‹éšæœºçš„çš„æ•°æ˜¯å¦ä¸ºéšæœºæ•°
 	{
 		number = rand() % 101;
 		printf("%d\t", number);
 	}
 	printf("\n");
 
-	printf("ÇëÊäÈëÄãËùÈÏÎªµÄÊı\n");
+	printf("è¯·è¾“å…¥ä½ æ‰€è®¤ä¸ºçš„æ•°\n");
 	scanf_s("%d", &yournumber);
 
 	while (number!=yournumber)
 	{
 		if (number > yournumber)
 		{
-			printf("Ğ¡\nÇëÖØ²Â\n");
+			printf("å°\nè¯·é‡çŒœ\n");
 			scanf_s("%d", &yournumber);
 			continue;
 		}	
 		else if (number < yournumber)
 		{
-			printf("´ó\nÇëÖØ²Â\n");
+			printf("å¤§\nè¯·é‡çŒœ\n");
 			scanf_s("%d", &yournumber);
 		}
 	}
-	printf("¹§Ï²Äã²Â¶ÔÁË\n");
+	printf("æ­å–œä½ çŒœå¯¹äº†\n");
 
 	return 0;
 }
