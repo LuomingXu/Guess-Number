@@ -32,6 +32,6 @@ int main(int argc, char const *argv[])
 		}
 	}
 	printf("恭喜你猜对了\n");
-
+	printf("这是一个打印测试\n");
 	return 0;
 }
