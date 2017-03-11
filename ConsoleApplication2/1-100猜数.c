@@ -1,12 +1,20 @@
 ﻿#include<stdio.h>
 #include<time.h>
 #include<stdlib.h>
+
+int countNumber(int start,int finish);
+
 int main(int argc, char const *argv[])
 {
 	int number = 0;
     int yournumber = 0;
     int i = 0;
-    //All this change is for test, forgive me, my applogize.
+    int choose=0;
+    int start=0;
+    int finish=0;
+    switch(choose)
+    {
+    case 1:
 	//定义时间种子，不能定义在for循环之中，若如此，就为伪随机
 	srand((unsigned)time(NULL));
 
@@ -36,7 +44,27 @@ int main(int argc, char const *argv[])
 		}
 	}
 	printf("恭喜你猜对了\n");
-	printf("这是一个打印测试\n");
-
+        break;
+    case 2:
+        printf("请输入开始与结束的数字，以\",\"为隔\n"); 
+        scanf_s("%d,%d",&start,&finish);
+        printf("和为:%d",countNumber(start,finish);
+        break;
+    defult:
+        printf("请输入1或2\n"):
+        break;
+    }
+    printf("退出成功\n");
 	return 0;
+}
+int countNumber(int start,int finish)
+{
+    int sum=0;
+    
+    for(start;start<=finish;start++)
+    {
+        sum+=start;
+    }
+
+    return sum;
 }
