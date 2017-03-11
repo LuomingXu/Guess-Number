@@ -3,11 +3,15 @@
 #include<stdlib.h>
 int main(int argc, char const *argv[])
 {
-	int number = 0, yournumber = 0, i = 0;
-
+	int number = 0;
+    int yournumber = 0;
+    int i = 0;
+    //All this change is for test, forgive me, my applogize.
 	//定义时间种子，不能定义在for循环之中，若如此，就为伪随机
 	srand((unsigned)time(NULL));
-	for (i; i < 100; i++)//查看随机的的数是否为随机数
+
+    //以下for循环为查看所得的数是否为随机数
+	for (i; i < 100; i++)
 	{
 		number = rand() % 101;
 		printf("%d\t", number);
@@ -33,5 +37,6 @@ int main(int argc, char const *argv[])
 	}
 	printf("恭喜你猜对了\n");
 	printf("这是一个打印测试\n");
+
 	return 0;
 }
