@@ -1,8 +1,1 @@
-#include<stdio.h>
-int main(void)
-{
-	int i=9;
-	printf("%d",i);
-    printf("%d",i);
-	return 0;
-}
+为毛远程仓库不变化捏？？？还是14min之前的提交呢？
